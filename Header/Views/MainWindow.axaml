@@ -1,0 +1,86 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Header.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        MinWidth="400" MaxWidth="600"
+        Width="400" Height="240"
+        MinHeight="280" MaxHeight="350"
+        x:Class="Header.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Header">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <Grid RowDefinitions="Auto, 4*, 1.5*">
+        <Grid ColumnDefinitions="*, Auto, *" Background="Bisque">
+            <Border Grid.Column="1"
+                    BorderBrush="Black"
+                    BorderThickness="2, 0, 2, 2"
+                    Background="#970747"
+                    Padding="10"
+                    CornerRadius="0, 0, 3, 3">
+                <TextBlock
+                    Text="ФАЙЛ НЕ ОБНАРУЖЕН"
+                    Name="FindFileTextBlock"
+                    
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    FontSize="16"
+                    Foreground="Black" />
+            </Border>
+
+        </Grid>
+
+
+        <Border Grid.Row="1" Background="#FEF4E8">
+            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*, Auto" Margin="5">
+                <RadioButton
+                    Name="ListRadioButton"
+                    Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="0"
+                    Content="Ведомость"
+                    Background="Fuchsia" />
+                <RadioButton
+                    Name="PeriodRadioButton"
+                    Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="1"
+                    Content="Рубежный контроль"
+                    Background="Fuchsia" />
+                <RadioButton
+                    Name="SemesterRadioButton"
+                    Margin="0, 0, 5, 0" Grid.Column="0" Grid.Row="2"
+                    Content="Семестр"
+                    Background="Fuchsia" />
+                <RadioButton
+                    Name="StatisticsRadioButton"
+                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="0"
+                    Content="Статистика"
+                    Background="Coral" />
+                <RadioButton
+                    Name="DataEditionRadioButton"
+                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="1"
+                    Content="Изменить данные"
+                    Background="Coral" />
+                <RadioButton
+                    Name="SomeoneRadioButton"
+                    Margin="5, 0, 0, 0" Grid.Column="1" Grid.Row="2"
+                    Content="Что-то крутое"
+                    Background="Coral" />
+            </Grid>
+        </Border>
+        <Border Grid.Row="2" Background="#3A3960" Padding="0, 20, 0, 0">
+            <DockPanel LastChildFill="False" VerticalAlignment="Bottom">
+                <Button Name="StartButton" MinWidth="100" DockPanel.Dock="Left">Выполнить</Button>
+                <Button Name="DownloadButton" MinWidth="115" DockPanel.Dock="Left">Скачать файл</Button>
+                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap" Text="{Binding}">last change by 19.04.25</TextBlock>
+            </DockPanel>
+
+        </Border>
+    </Grid>
+
+</Window>
