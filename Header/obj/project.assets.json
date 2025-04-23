@@ -2235,7 +2235,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ольга\\.nuget\\packages\\": {}
+    "C:\\Users\\Nazzu\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2243,11 +2244,15 @@
       "projectUniqueName": "D:\\Project\\HeaderHelper\\Header\\Header.csproj",
       "projectName": "Header",
       "projectPath": "D:\\Project\\HeaderHelper\\Header\\Header.csproj",
-      "packagesPath": "C:\\Users\\Ольга\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Nazzu\\.nuget\\packages\\",
       "outputPath": "D:\\Project\\HeaderHelper\\Header\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Ольга\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nazzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

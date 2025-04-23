@@ -1,49 +1,49 @@
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Base.dll
-C:\Users\Ольга\.nuget\packages\avalonia.controls.colorpicker\11.2.6\lib\net8.0\Avalonia.Controls.ColorPicker.dll
-C:\Users\Ольга\.nuget\packages\avalonia.controls.datagrid\11.2.6\lib\net8.0\Avalonia.Controls.DataGrid.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Controls.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.DesignerSupport.dll
-C:\Users\Ольга\.nuget\packages\avalonia.desktop\11.2.6\lib\net8.0\Avalonia.Desktop.dll
-C:\Users\Ольга\.nuget\packages\avalonia.diagnostics\11.2.6\lib\net8.0\Avalonia.Diagnostics.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Dialogs.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.dll
-C:\Users\Ольга\.nuget\packages\avalonia.fonts.inter\11.2.6\lib\net8.0\Avalonia.Fonts.Inter.dll
-C:\Users\Ольга\.nuget\packages\avalonia.freedesktop\11.2.6\lib\net8.0\Avalonia.FreeDesktop.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Markup.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Markup.Xaml.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Metal.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.MicroCom.dll
-C:\Users\Ольга\.nuget\packages\avalonia.native\11.2.6\lib\net8.0\Avalonia.Native.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.OpenGL.dll
-C:\Users\Ольга\.nuget\packages\avalonia.remote.protocol\11.2.6\lib\net8.0\Avalonia.Remote.Protocol.dll
-C:\Users\Ольга\.nuget\packages\avalonia.skia\11.2.6\lib\net8.0\Avalonia.Skia.dll
-C:\Users\Ольга\.nuget\packages\avalonia.themes.fluent\11.2.6\lib\net8.0\Avalonia.Themes.Fluent.dll
-C:\Users\Ольга\.nuget\packages\avalonia.themes.simple\11.2.6\lib\net8.0\Avalonia.Themes.Simple.dll
-C:\Users\Ольга\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Vulkan.dll
-C:\Users\Ольга\.nuget\packages\avalonia.win32\11.2.6\lib\net8.0\Avalonia.Win32.dll
-C:\Users\Ольга\.nuget\packages\avalonia.x11\11.2.6\lib\net8.0\Avalonia.X11.dll
-C:\Users\Ольга\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll
-C:\Users\Ольга\.nuget\packages\epplus\8.0.1\lib\net9.0\EPPlus.dll
-C:\Users\Ольга\.nuget\packages\epplus.interfaces\8.0.0\lib\net9.0\EPPlus.Interfaces.dll
-C:\Users\Ольга\.nuget\packages\harfbuzzsharp\7.3.0.3\lib\net6.0\HarfBuzzSharp.dll
-C:\Users\Ольга\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Base.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.controls.colorpicker\11.2.6\lib\net8.0\Avalonia.Controls.ColorPicker.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.controls.datagrid\11.2.6\lib\net8.0\Avalonia.Controls.DataGrid.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Controls.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.DesignerSupport.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.desktop\11.2.6\lib\net8.0\Avalonia.Desktop.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.diagnostics\11.2.6\lib\net8.0\Avalonia.Diagnostics.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Dialogs.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.fonts.inter\11.2.6\lib\net8.0\Avalonia.Fonts.Inter.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.freedesktop\11.2.6\lib\net8.0\Avalonia.FreeDesktop.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Markup.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Markup.Xaml.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Metal.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.MicroCom.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.native\11.2.6\lib\net8.0\Avalonia.Native.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.OpenGL.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.remote.protocol\11.2.6\lib\net8.0\Avalonia.Remote.Protocol.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.skia\11.2.6\lib\net8.0\Avalonia.Skia.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.themes.fluent\11.2.6\lib\net8.0\Avalonia.Themes.Fluent.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.themes.simple\11.2.6\lib\net8.0\Avalonia.Themes.Simple.dll
+C:\Users\Nazzu\.nuget\packages\avalonia\11.2.6\ref\net8.0\Avalonia.Vulkan.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.win32\11.2.6\lib\net8.0\Avalonia.Win32.dll
+C:\Users\Nazzu\.nuget\packages\avalonia.x11\11.2.6\lib\net8.0\Avalonia.X11.dll
+C:\Users\Nazzu\.nuget\packages\communitytoolkit.mvvm\8.2.1\lib\net6.0\CommunityToolkit.Mvvm.dll
+C:\Users\Nazzu\.nuget\packages\epplus\8.0.1\lib\net9.0\EPPlus.dll
+C:\Users\Nazzu\.nuget\packages\epplus.interfaces\8.0.0\lib\net9.0\EPPlus.Interfaces.dll
+C:\Users\Nazzu\.nuget\packages\harfbuzzsharp\7.3.0.3\lib\net6.0\HarfBuzzSharp.dll
+C:\Users\Nazzu\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\Microsoft.CSharp.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.configuration\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.configuration.fileextensions\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.configuration.json\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.Json.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.fileproviders.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.fileproviders.physical\9.0.3\lib\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.filesystemglobbing\9.0.3\lib\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
-C:\Users\Ольга\.nuget\packages\microsoft.extensions.primitives\9.0.3\lib\net9.0\Microsoft.Extensions.Primitives.dll
-C:\Users\Ольга\.nuget\packages\microsoft.io.recyclablememorystream\3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.configuration.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.configuration\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.configuration.fileextensions\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.configuration.json\9.0.3\lib\net9.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.fileproviders.abstractions\9.0.3\lib\net9.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.fileproviders.physical\9.0.3\lib\net9.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.filesystemglobbing\9.0.3\lib\net9.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.extensions.primitives\9.0.3\lib\net9.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Nazzu\.nuget\packages\microsoft.io.recyclablememorystream\3.0.1\lib\net6.0\Microsoft.IO.RecyclableMemoryStream.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\Microsoft.Win32.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\Microsoft.Win32.Registry.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\mscorlib.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\netstandard.dll
-C:\Users\Ольга\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
+C:\Users\Nazzu\.nuget\packages\skiasharp\2.88.9\lib\net6.0\SkiaSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Buffers.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Collections.Concurrent.dll
@@ -161,10 +161,10 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Cryptography.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Cryptography.Encoding.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Cryptography.OpenSsl.dll
-C:\Users\Ольга\.nuget\packages\system.security.cryptography.pkcs\9.0.3\lib\net9.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\Nazzu\.nuget\packages\system.security.cryptography.pkcs\9.0.3\lib\net9.0\System.Security.Cryptography.Pkcs.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Cryptography.Primitives.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Ольга\.nuget\packages\system.security.cryptography.xml\9.0.3\lib\net9.0\System.Security.Cryptography.Xml.dll
+C:\Users\Nazzu\.nuget\packages\system.security.cryptography.xml\9.0.3\lib\net9.0\System.Security.Cryptography.Xml.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Principal.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Security.Principal.Windows.dll
@@ -202,5 +202,5 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Xml.XmlSerializer.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Xml.XPath.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\System.Xml.XPath.XDocument.dll
-C:\Users\Ольга\.nuget\packages\tmds.dbus.protocol\0.20.0\lib\net8.0\Tmds.DBus.Protocol.dll
+C:\Users\Nazzu\.nuget\packages\tmds.dbus.protocol\0.20.0\lib\net8.0\Tmds.DBus.Protocol.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\9.0.4\ref\net9.0\WindowsBase.dll

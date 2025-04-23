@@ -27,8 +27,8 @@
                     Padding="10"
                     CornerRadius="0, 0, 3, 3">
                 <TextBlock
-                    Text="ФАЙЛ НЕ ОБНАРУЖЕН"
                     Name="FindFileTextBlock"
+                    Text="{Binding GroupName}"
                     
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
@@ -75,9 +75,9 @@
         </Border>
         <Border Grid.Row="2" Background="#3A3960" Padding="0, 20, 0, 0">
             <DockPanel LastChildFill="False" VerticalAlignment="Bottom">
-                <Button Name="StartButton" MinWidth="100" DockPanel.Dock="Left">Выполнить</Button>
+                <Button Name="StartButton" MinWidth="100" Content="Выполнить" DockPanel.Dock="Left"/>
                 <Button Name="DownloadButton" MinWidth="115" DockPanel.Dock="Left">Скачать файл</Button>
-                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap" Text="{Binding}">last change by 19.04.25</TextBlock>
+                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap" Text="{Binding LastChanged}"/>
             </DockPanel>
 
         </Border>

@@ -79,3 +79,4 @@ D:\Project\HeaderHelper\Header\obj\Debug\net9.0\refint\Avalonia\Header.dll
 D:\Project\HeaderHelper\Header\obj\Debug\net9.0\Header.csproj.Up2Date
 D:\Project\HeaderHelper\Header\obj\Debug\net9.0\Header.genruntimeconfig.cache
 D:\Project\HeaderHelper\Header\obj\Debug\net9.0\ref\Header.dll
+D:\Project\HeaderHelper\Header\obj\Debug\net9.0\Header.sourcelink.json
