@@ -4,12 +4,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Header.Views.StatisticsForm"
-    x:DataType="vm:StatisticsViewModel"
-    xmlns:vm="clr-namespace:Header.ViewModels"
-    Title="AcquaintanceForm">
-    
+        x:DataType="vm:StatisticsViewModel"
+        xmlns:vm="clr-namespace:Header.ViewModels"
+        Title="AcquaintanceForm">
+
+    <!-- Ты промахнулся с названием класса (ты написал StatisticsFormViewModel а в папке ViewModel ты созда класс StatisticsViewModel) -->
     <Window.DataContext>
-        <vm:StatisticsFormViewModel />
+        <vm:StatisticsViewModel />
     </Window.DataContext>
 
     <DataGrid Name="DisciplinesDataGrid" AutoGenerateColumns="True"

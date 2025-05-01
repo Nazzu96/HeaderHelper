@@ -1,6 +1,16 @@
+using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
+
 namespace Header.ViewModels;
 
-public class StatisticsViewModel
+// Чтобы класс можно было использовать как ViewModel он должен наследоваться от ObservableObject
+// а также иметь расширение partial (переводиться как "частичный")
+// тк ObservableObject будет создавать в другом месте доп функции и поля (например при ObservableProperty)
+// поэтому я советовал CommunityToolkit.MVVM тк большинство повторяющегося кода просто автоматизировано
+public partial class StatisticsViewModel : ObservableObject
 {
-    
+    public ObservableCollection<string> Disc { get; } = [];
+
+    // в другой части проекта создалось свойство Test к которому ты уже будешь привязываться во View
+    [ObservableProperty] private string _test = "test";
 }
