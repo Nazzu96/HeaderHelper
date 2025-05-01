@@ -10,15 +10,11 @@
         "projectUniqueName": "D:\\Project\\HeaderHelper\\Header\\Header.csproj",
         "projectName": "Header",
         "projectPath": "D:\\Project\\HeaderHelper\\Header\\Header.csproj",
-        "packagesPath": "C:\\Users\\Nazzu\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\Ольга\\.nuget\\packages\\",
         "outputPath": "D:\\Project\\HeaderHelper\\Header\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Nazzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ольга\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -52,31 +48,35 @@
           "dependencies": {
             "Avalonia": {
               "target": "Package",
-              "version": "[11.2.6, )"
+              "version": "[11.3.0-rc1, )"
+            },
+            "Avalonia.Controls.DataGrid": {
+              "target": "Package",
+              "version": "[11.3.0-rc1, )"
             },
             "Avalonia.Desktop": {
               "target": "Package",
-              "version": "[11.2.6, )"
+              "version": "[11.3.0-rc1, )"
             },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.2.6, )"
+              "version": "[11.3.0-rc1, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.2.6, )"
+              "version": "[11.3.0-rc1, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.2.6, )"
+              "version": "[11.3.0-rc1, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.2.1, )"
+              "version": "[8.4.0, )"
             },
             "EPPlus": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[8.0.3, )"
             }
           },
           "imports": [

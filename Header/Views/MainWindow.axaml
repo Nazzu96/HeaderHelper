@@ -28,8 +28,8 @@
                     CornerRadius="0, 0, 3, 3">
                 <TextBlock
                     Name="FindFileTextBlock"
-                    Text="{Binding GroupName}"
-                    
+                    Text="{Binding CollName}"
+
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
                     FontSize="16"
@@ -42,32 +42,45 @@
         <Border Grid.Row="1" Background="#FEF4E8">
             <Grid RowDefinitions="*,*,*" ColumnDefinitions="*, Auto" Margin="5">
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="ListRadioButton"
+                    IsChecked="{Binding ListRadioButtonSelected}"
                     Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="0"
-                    Content="Ведомость"
+                    Content="Знакомство"
                     Background="Fuchsia" />
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="PeriodRadioButton"
+                    IsChecked="{Binding PeriodRadioButtonSelected}"
                     Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="1"
                     Content="Рубежный контроль"
                     Background="Fuchsia" />
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="SemesterRadioButton"
+                    IsChecked="{Binding SemesterRadioButtonSelected}"
                     Margin="0, 0, 5, 0" Grid.Column="0" Grid.Row="2"
                     Content="Семестр"
                     Background="Fuchsia" />
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="StatisticsRadioButton"
+                    IsChecked="{Binding StatisticsRadioButtonSelected}"
                     Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="0"
                     Content="Статистика"
                     Background="Coral" />
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="DataEditionRadioButton"
+                    IsChecked="{Binding DataEditionRadioButtonSelected}"
                     Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="1"
                     Content="Изменить данные"
                     Background="Coral" />
                 <RadioButton
+                    GroupName="SelectOptions"
                     Name="SomeoneRadioButton"
+                    IsChecked="{Binding SomeoneRadioButtonSelected}"
+                    IsEnabled="False"
                     Margin="5, 0, 0, 0" Grid.Column="1" Grid.Row="2"
                     Content="Что-то крутое"
                     Background="Coral" />
@@ -75,9 +88,19 @@
         </Border>
         <Border Grid.Row="2" Background="#3A3960" Padding="0, 20, 0, 0">
             <DockPanel LastChildFill="False" VerticalAlignment="Bottom">
-                <Button Name="StartButton" MinWidth="100" Content="Выполнить" DockPanel.Dock="Left"/>
-                <Button Name="DownloadButton" MinWidth="115" DockPanel.Dock="Left">Скачать файл</Button>
-                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap" Text="{Binding LastChanged}"/>
+                <Button
+                    Name="ActionsButton"
+                    Command="{Binding RadioButtonActivitiesCommand}"
+                    MinWidth="100" Content="Выполнить" DockPanel.Dock="Left" />
+                <Button
+                    Name="DownloadButton"
+                    Command="{Binding DownloadFileCommand}"
+                    CommandParameter="{Binding $parent[Window]}"
+                    MinWidth="115" DockPanel.Dock="Left">
+                    Скачать файл
+                </Button>
+                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap"
+                           Text="{Binding LastChanged}" />
             </DockPanel>
 
         </Border>

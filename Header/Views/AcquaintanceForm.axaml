@@ -1,0 +1,80 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Header.Views.AcquaintanceForm"
+        x:DataType="vm:AcquaintanceFormViewModel"
+        xmlns:vm="clr-namespace:Header.ViewModels"
+        Title="AcquaintanceForm">
+    <!-- Комментарий -->
+    <!-- DataContext="{Binding Source={x:Type vm:AcquaintanceFormViewModel}}" -->
+    <Window.DataContext>
+        <vm:AcquaintanceFormViewModel />
+    </Window.DataContext>
+
+    <Grid ColumnDefinitions="1*, 2*" Background="Black">
+        <!-- Колонка со студентами -->
+        <Border Grid.Column="0" Background="AntiqueWhite">
+            <Grid RowDefinitions="Auto, *">
+                <Border Grid.Row="0">
+                    <Label Background="Aqua" HorizontalAlignment="Center">Студенты</Label>
+                </Border>
+                <Border Grid.Row="1">
+                    <DataGrid Name="StudentsDataGrid" AutoGenerateColumns="True" ItemsSource="{Binding Std}" />
+                </Border>
+
+            </Grid>
+
+        </Border>
+
+
+        <!--Колонка правой части (Добавить, Cохранить, Дисциплины)-->
+        <Border Grid.Column="1" Background="Aqua">
+
+            <Grid RowDefinitions="1*, 2*">
+                <!--Строка с добавлением студента/дисциплины-->
+                <Border Grid.Row="" Background="BlueViolet"></Border>
+
+                <!-- Таблица с Именем группы, сохранением и дисциплинами-->
+                <Border Grid.Row="1">
+                    <Grid ColumnDefinitions="1*, 2*">
+
+                        <!-- Колонка с Именем группы-->
+                        <Border Grid.Column="0" Background="BurlyWood">
+                            <Grid>
+                                <StackPanel
+                                    HorizontalAlignment="Center"
+                                    Margin="0, 20,0, 0"
+                                    Spacing="15">
+
+                                    <TextBox Watermark="Направление"></TextBox>
+                                    <TextBox Watermark="Курс"></TextBox>
+                                    <TextBox Watermark="Номер группы"></TextBox>
+
+                                </StackPanel>
+                                <Button Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                                        Margin="0, 0, 0 ,10">
+                                </Button>
+                            </Grid>
+
+                        </Border>
+                        <!-- Колонка с Дисциплинами -->
+
+                        <Border Grid.Column="1" Background="Crimson">
+                            <DataGrid Name="DisciplinesDataGrid" AutoGenerateColumns="True"
+                                      ItemsSource="{Binding Disc}"
+                                      GridLinesVisibility="All"
+                                      Background="AliceBlue"
+                                      BorderBrush="Gray"
+                                      BorderThickness="2"/>
+                        </Border>
+                    </Grid>
+                </Border>
+
+
+            </Grid>
+
+        </Border>
+    </Grid>
+</Window>

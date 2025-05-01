@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Header.Views.StatisticsForm"
+    x:DataType="vm:StatisticsViewModel"
+    xmlns:vm="clr-namespace:Header.ViewModels"
+    Title="AcquaintanceForm">
+    
+    <Window.DataContext>
+        <vm:StatisticsFormViewModel />
+    </Window.DataContext>
+
+    <DataGrid Name="DisciplinesDataGrid" AutoGenerateColumns="True"
+              ItemsSource="{Binding Disc}"
+              GridLinesVisibility="All"
+              Background="AliceBlue"
+              BorderBrush="Gray"
+              BorderThickness="2" />
+</Window>
