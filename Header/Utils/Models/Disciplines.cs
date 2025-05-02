@@ -1,4 +1,4 @@
-namespace Header;
+namespace Header.Utils.Models;
 
 public class Disciplines
 {

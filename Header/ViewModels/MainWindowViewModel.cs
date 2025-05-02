@@ -11,7 +11,7 @@ using Header.Views;
 
 namespace Header.ViewModels;
 
-public partial class MainWindowViewModel : ViewModelBase
+public partial class MainWindowViewModel : ObservableObject
 {
     private string _groupName = "ИСП-IV-03";
     private string _lastChange = "last change: " + DateTime.Today.ToString("dd.MM.yyyy");

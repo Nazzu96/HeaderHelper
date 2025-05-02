@@ -21,9 +21,11 @@
                     <Label Background="Aqua" HorizontalAlignment="Center">Студенты</Label>
                 </Border>
                 <Border Grid.Row="1">
-                    <DataGrid Name="StudentsDataGrid" AutoGenerateColumns="True" ItemsSource="{Binding Std}" />
+                    <DataGrid Background="Aquamarine" Name="StudentsDataGrid"
+                              ItemsSource="{Binding Std}"
+                              AutoGenerateColumns="True"
+                              IsReadOnly="False" />
                 </Border>
-
             </Grid>
 
         </Border>
@@ -34,7 +36,28 @@
 
             <Grid RowDefinitions="1*, 2*">
                 <!--Строка с добавлением студента/дисциплины-->
-                <Border Grid.Row="" Background="BlueViolet"></Border>
+                <Border Grid.Row="0" Background="BlueViolet">
+                    <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
+
+                        <RadioButton Grid.Column="0" Grid.Row="0" GroupName="Add" Content="Студента" 
+                                     HorizontalAlignment="Left" Margin="10, 0, 0, 0"
+                                     IsChecked="{Binding TypeGrid, Converter={StaticResource TypeOfGridToBoolConverter}, ConverterParameter=Student}" />
+                        <RadioButton Grid.Column="1" Grid.Row="0" GroupName="Add" Content="Дисциплину"
+                                     HorizontalAlignment="Right" Margin="0, 0, 10, 0"
+                                     IsChecked="{Binding TypeGrid, Converter={StaticResource TypeOfGridToBoolConverter}, ConverterParameter=Discipline}" />
+
+                        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" 
+                                HorizontalAlignment="Center" Content="Добавить" 
+                                Command="{Binding AddButtonCommand}"/>
+                        <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+                                 Text="{Binding FullNameOrDiscipline}"
+                                 Watermark="Студент Студентович Студентов/ Дисциплина"
+                                 HorizontalAlignment="Stretch" Margin="10"
+                                                VerticalAlignment="Center" />
+
+                    </Grid>
+
+                </Border>
 
                 <!-- Таблица с Именем группы, сохранением и дисциплинами-->
                 <Border Grid.Row="1">
@@ -67,7 +90,7 @@
                                       GridLinesVisibility="All"
                                       Background="AliceBlue"
                                       BorderBrush="Gray"
-                                      BorderThickness="2"/>
+                                      BorderThickness="0" />
                         </Border>
                     </Grid>
                 </Border>

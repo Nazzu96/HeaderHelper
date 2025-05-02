@@ -8,15 +8,21 @@
         xmlns:vm="clr-namespace:Header.ViewModels"
         Title="AcquaintanceForm">
 
-    <!-- Ты промахнулся с названием класса (ты написал StatisticsFormViewModel а в папке ViewModel ты созда класс StatisticsViewModel) -->
+    <!-- Ты промахнулся с названием класса (ты написал StatisticsFormViewModel а в папке ViewModel ты создал класс StatisticsViewModel) -->
     <Window.DataContext>
         <vm:StatisticsViewModel />
     </Window.DataContext>
 
-    <DataGrid Name="DisciplinesDataGrid" AutoGenerateColumns="True"
-              ItemsSource="{Binding Disc}"
+    <DataGrid Name="DisciplinesDataGrid" 
+              ItemsSource="{Binding Std}"
               GridLinesVisibility="All"
               Background="AliceBlue"
               BorderBrush="Gray"
-              BorderThickness="2" />
+              BorderThickness="2"
+              VerticalAlignment="Stretch"
+              HorizontalAlignment="Stretch">
+        <DataGrid.Columns>
+            <DataGridTextColumn Header="Имя" Binding="{Binding Name}" />
+        </DataGrid.Columns>
+    </DataGrid>
 </Window>
