@@ -4,31 +4,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Header.Views.AcquaintanceForm"
-        x:DataType="vm:AcquaintanceFormViewModel"
+        x:DataType="vm:GroupInfoFormViewModel"
         xmlns:vm="clr-namespace:Header.ViewModels"
-        Title="AcquaintanceForm">
+        Title="GroupInfoForm">
     <!-- Комментарий -->
     <!-- DataContext="{Binding Source={x:Type vm:AcquaintanceFormViewModel}}" -->
     <Window.DataContext>
-        <vm:AcquaintanceFormViewModel />
+        <vm:GroupInfoFormViewModel />
     </Window.DataContext>
 
-    <Grid ColumnDefinitions="1*, 2*" Background="Black">
+    <Grid ColumnDefinitions="1*, 2*" >
         <!-- Колонка со студентами -->
-        <Border Grid.Column="0" Background="AntiqueWhite">
-            <Grid RowDefinitions="Auto, *">
-                <Border Grid.Row="0">
-                    <Label Background="Aqua" HorizontalAlignment="Center">Студенты</Label>
-                </Border>
-                <Border Grid.Row="1">
-                    <DataGrid Background="Aquamarine" Name="StudentsDataGrid"
-                              ItemsSource="{Binding Std}"
-                              AutoGenerateColumns="True"
-                              IsReadOnly="False" />
-                </Border>
-            </Grid>
+        <DataGrid Grid.Column="0" Background="AliceBlue" CellTheme="" Name="StudentsDataGrid"
+                  ItemsSource="{Binding Std}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Width="Auto" FontSize="12"
+                                    Binding="{Binding Id}" />
+                <DataGridTextColumn Header="ФИО студента" Width="*" FontSize="14"
+                                    Binding="{Binding Name}"
+                                    />
+            </DataGrid.Columns>
 
-        </Border>
+        </DataGrid>
 
 
         <!--Колонка правой части (Добавить, Cохранить, Дисциплины)-->
@@ -39,21 +36,21 @@
                 <Border Grid.Row="0" Background="BlueViolet">
                     <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
 
-                        <RadioButton Grid.Column="0" Grid.Row="0" GroupName="Add" Content="Студента" 
+                        <RadioButton Grid.Column="0" Grid.Row="0" GroupName="Add" Content="Студента"
                                      HorizontalAlignment="Left" Margin="10, 0, 0, 0"
                                      IsChecked="{Binding TypeGrid, Converter={StaticResource TypeOfGridToBoolConverter}, ConverterParameter=Student}" />
                         <RadioButton Grid.Column="1" Grid.Row="0" GroupName="Add" Content="Дисциплину"
                                      HorizontalAlignment="Right" Margin="0, 0, 10, 0"
                                      IsChecked="{Binding TypeGrid, Converter={StaticResource TypeOfGridToBoolConverter}, ConverterParameter=Discipline}" />
 
-                        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" 
-                                HorizontalAlignment="Center" Content="Добавить" 
-                                Command="{Binding AddButtonCommand}"/>
-                        <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" 
+                        <Button Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2"
+                                HorizontalAlignment="Center" Content="Добавить"
+                                Command="{Binding AddButtonCommand}" />
+                        <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"
                                  Text="{Binding FullNameOrDiscipline}"
                                  Watermark="Студент Студентович Студентов/ Дисциплина"
                                  HorizontalAlignment="Stretch" Margin="10"
-                                                VerticalAlignment="Center" />
+                                 VerticalAlignment="Center" />
 
                     </Grid>
 
@@ -71,9 +68,9 @@
                                     Margin="0, 20,0, 0"
                                     Spacing="15">
 
-                                    <TextBox Watermark="Направление"></TextBox>
-                                    <TextBox Watermark="Курс"></TextBox>
-                                    <TextBox Watermark="Номер группы"></TextBox>
+                                    <TextBox Watermark="Направление" Text="{Binding GroupDirection}"></TextBox>
+                                    <TextBox Watermark="Курс" Text="{Binding GroupAge}"></TextBox>
+                                    <TextBox Watermark="Номер группы" Text="{Binding GroupNumber}"></TextBox>
 
                                 </StackPanel>
                                 <Button Content="Сохранить" HorizontalAlignment="Center" VerticalAlignment="Bottom"
@@ -85,12 +82,19 @@
                         <!-- Колонка с Дисциплинами -->
 
                         <Border Grid.Column="1" Background="Crimson">
-                            <DataGrid Name="DisciplinesDataGrid" AutoGenerateColumns="True"
+                            <DataGrid Name="DisciplinesDataGrid"
                                       ItemsSource="{Binding Disc}"
                                       GridLinesVisibility="All"
                                       Background="AliceBlue"
                                       BorderBrush="Gray"
-                                      BorderThickness="0" />
+                                      BorderThickness="0" >
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="№" Width="Auto" 
+                                                        Binding="{Binding Id}"/>
+                                    <DataGridTextColumn Header="Учебной дисциплины" Width="Auto" 
+                                                        Binding="{Binding Discipline}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
                         </Border>
                     </Grid>
                 </Border>
