@@ -12,17 +12,5 @@
     <Window.DataContext>
         <vm:StatisticsViewModel />
     </Window.DataContext>
-
-    <DataGrid Name="DisciplinesDataGrid" 
-              ItemsSource="{Binding Std}"
-              GridLinesVisibility="All"
-              Background="AliceBlue"
-              BorderBrush="Gray"
-              BorderThickness="2"
-              VerticalAlignment="Stretch"
-              HorizontalAlignment="Stretch">
-        <DataGrid.Columns>
-            <DataGridTextColumn Header="Имя" Binding="{Binding Name}" />
-        </DataGrid.Columns>
-    </DataGrid>
+    
 </Window>

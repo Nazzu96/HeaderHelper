@@ -14,38 +14,5 @@ public partial class StatisticsViewModel : ObservableObject
 
     // в другой части проекта создалось свойство Test к которому ты уже будешь привязываться во View
     [ObservableProperty] private string _test = "test";
-    
-    public ObservableCollection<Student> Std { get; } =
-    [
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-        new Student("Устенко Данил Алексеевич"),
-    ];
 
 }

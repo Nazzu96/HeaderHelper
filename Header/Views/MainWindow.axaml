@@ -18,7 +18,7 @@
         <vm:MainWindowViewModel />
     </Design.DataContext>
 
-    <Grid RowDefinitions="Auto, 4*, 1.5*">
+    <Grid RowDefinitions="Auto, 1*, 0.5*">
         <Grid ColumnDefinitions="*, Auto, *" Background="Bisque">
             <Border Grid.Column="1"
                     BorderBrush="Black"
@@ -40,13 +40,13 @@
 
 
         <Border Grid.Row="1" Background="#FEF4E8">
-            <Grid RowDefinitions="*,*,*" ColumnDefinitions="*, Auto" Margin="5">
+            <Grid RowDefinitions="*,*" ColumnDefinitions="*, Auto" Margin="5">
                 <RadioButton
                     GroupName="SelectOptions"
-                    Name="ListRadioButton"
-                    IsChecked="{Binding ListRadioButtonSelected}"
+                    Name="SheetRadioButton"
+                    IsChecked="{Binding SheetRadioButtonSelected}"
                     Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="0"
-                    Content="Знакомство"
+                    Content="Ведомость"
                     Background="Fuchsia" />
                 <RadioButton
                     GroupName="SelectOptions"
@@ -57,33 +57,19 @@
                     Background="Fuchsia" />
                 <RadioButton
                     GroupName="SelectOptions"
-                    Name="SemesterRadioButton"
-                    IsChecked="{Binding SemesterRadioButtonSelected}"
-                    Margin="0, 0, 5, 0" Grid.Column="0" Grid.Row="2"
-                    Content="Семестр"
-                    Background="Fuchsia" />
+                    Name="GroupInfoRadioButton"
+                    IsChecked="{Binding GroupInfoRadioButtonSelected}"
+                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="0"
+                    Content="Данные группы"
+                    Background="Coral" />
                 <RadioButton
                     GroupName="SelectOptions"
                     Name="StatisticsRadioButton"
                     IsChecked="{Binding StatisticsRadioButtonSelected}"
-                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="0"
+                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="1"
                     Content="Статистика"
                     Background="Coral" />
-                <RadioButton
-                    GroupName="SelectOptions"
-                    Name="DataEditionRadioButton"
-                    IsChecked="{Binding DataEditionRadioButtonSelected}"
-                    Margin="5, 0, 0, 5" Grid.Column="1" Grid.Row="1"
-                    Content="Изменить данные"
-                    Background="Coral" />
-                <RadioButton
-                    GroupName="SelectOptions"
-                    Name="SomeoneRadioButton"
-                    IsChecked="{Binding SomeoneRadioButtonSelected}"
-                    IsEnabled="False"
-                    Margin="5, 0, 0, 0" Grid.Column="1" Grid.Row="2"
-                    Content="Что-то крутое"
-                    Background="Coral" />
+
             </Grid>
         </Border>
         <Border Grid.Row="2" Background="#3A3960" Padding="0, 20, 0, 0">

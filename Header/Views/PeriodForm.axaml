@@ -2,8 +2,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:Header.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Header.Views.PeriodForm"
         Title="PeriodForm">
-    Welcome to Avalonia!
+
+    <Window.DataContext>
+        <vm:PeriodViewModel />
+    </Window.DataContext>
+
+    <Grid RowDefinitions="Auto, *, Auto">
+        <!-- Переключение дисциплин -->
+        <StackPanel Grid.Row="0">
+            <Button Name="DisciplineLeftArrowButton"/>
+            <TextBlock Name="DisciplineTextBlock"/>
+            <Button Name="DisciplineRightArrowButton"/>
+        </StackPanel>
+        
+        <!-- Переключение номера РК -->
+        <StackPanel Grid.Row="0">
+            <ComboBox Name="PeriodNumberComboBox">
+                <ComboBoxItem></ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        
+        <!-- DataGrid для РК -->
+        <DataGrid Grid.Row="1" Background="AntiqueWhite">
+        </DataGrid>
+        
+        <!-- Сохранение результатов и подпись -->
+        <StackPanel Grid.Row="2">
+            <Label />
+            <Button />
+        </StackPanel>
+    </Grid>
+
+
+
 </Window>

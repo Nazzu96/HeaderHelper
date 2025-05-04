@@ -4,9 +4,9 @@ using Avalonia.Markup.Xaml;
 
 namespace Header.Views;
 
-public partial class AcquaintanceForm : Window
+public partial class GroupInfoForm : Window
 {
-    public AcquaintanceForm()
+    public GroupInfoForm()
     {
         InitializeComponent();
     }

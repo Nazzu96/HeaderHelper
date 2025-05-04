@@ -4,6 +4,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Header.Views.SheetForm"
+        x:DataType="vm:SheetViewModel"
+        xmlns:vm="clr-namespace:Header.ViewModels"
         Title="SheetForm">
-    Welcome to Avalonia!
+
+    <Window.DataContext>
+        <vm:SheetViewModel />
+    </Window.DataContext>
+
+    <Grid RowDefinitions="Auto, *, Auto" Background="Aqua">
+
+        <!-- Переключатель месяцев -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
+            <Button Name="MonthLeftArrowButton"/>
+            <TextBlock Name="MonthTextBlock"/>
+            <Button Name="MonthRightArrowButton"/>
+        </StackPanel>
+        
+        <!-- Переключатель дисциплин -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
+            <ComboBox Name="DisciplineComboBox"/>
+        </StackPanel>
+
+        <!-- Перечень студентов -->
+        <DataGrid Grid.Row="1" ItemsSource="{Binding }">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding }" />
+                <DataGridTextColumn Binding="{Binding }" />
+                <DataGridCheckBoxColumn />
+                <DataGridCheckBoxColumn />
+                <DataGridTextColumn />
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <!-- Сохранение и подпись -->
+        <StackPanel Grid.Row="2">
+            <Label Name=""/>
+            <Button Name="SaveButton"/>
+        </StackPanel>
+    </Grid>
 </Window>

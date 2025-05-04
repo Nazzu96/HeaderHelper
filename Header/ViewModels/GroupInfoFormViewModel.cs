@@ -9,7 +9,7 @@ using OfficeOpenXml.ConditionalFormatting.Contracts;
 
 namespace Header.ViewModels;
 
-public partial class AcquaintanceFormViewModel : ObservableObject
+public partial class GroupInfoFormViewModel : ObservableObject
 {
     // TODO: Сделать возможным заполнение на первый семестр и второй
     [ObservableProperty] private TypeOfGrid _typeGrid = TypeOfGrid.Student;

@@ -1,6 +1,7 @@
 namespace Header.Utils.Models;
 
-public class Student(string name)
+public sealed class Student(int id, string name)
 {
+    public int Id { get; set; } = id;
     public string Name { get; set; } = name;
 }

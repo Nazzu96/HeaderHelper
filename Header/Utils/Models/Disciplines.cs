@@ -1,11 +1,7 @@
 namespace Header.Utils.Models;
 
-public class Disciplines
+public sealed class Disciplines(int id, string discipline)
 {
-    public string Discipline { get; set; }
-
-    public Disciplines(string discipline)
-    {
-        Discipline = discipline;
-    }
+    public int Id { get; set; } = id;
+    public string Discipline { get; set; } = discipline;
 }

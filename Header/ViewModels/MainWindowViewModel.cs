@@ -16,12 +16,10 @@ public partial class MainWindowViewModel : ObservableObject
     private string _groupName = "ИСП-IV-03";
     private string _lastChange = "last change: " + DateTime.Today.ToString("dd.MM.yyyy");
     
-    [ObservableProperty] private bool _listRadioButtonSelected;
+    [ObservableProperty] private bool _sheetRadioButtonSelected;
     [ObservableProperty] private bool _periodRadioButtonSelected;
-    [ObservableProperty] private bool _semesterRadioButtonSelected;
+    [ObservableProperty] private bool _groupInfoRadioButtonSelected;
     [ObservableProperty] private bool _statisticsRadioButtonSelected;
-    [ObservableProperty] private bool _dataEditionRadioButtonSelected;
-    [ObservableProperty] private bool _someoneRadioButtonSelected;
 
     private string CollName
     {
@@ -45,12 +43,11 @@ public partial class MainWindowViewModel : ObservableObject
 
     [RelayCommand] private void RadioButtonActivities()
     {
-        if (ListRadioButtonSelected)
+        if (SheetRadioButtonSelected)
         {
-         // Переход на форму Знакомство;  
-         AcquaintanceForm acquaintanceForm = new AcquaintanceForm();
-         acquaintanceForm.Show();
-         
+         // Переход на форму Знакомство;
+         SheetForm sheetForm = new SheetForm();
+         sheetForm.Show();
         }
 
         else if (PeriodRadioButtonSelected)
@@ -59,7 +56,19 @@ public partial class MainWindowViewModel : ObservableObject
             StatisticsForm statisticsForm = new StatisticsForm();
             statisticsForm.Show();
         }
+        
+        else if (GroupInfoRadioButtonSelected)
+        {
+            GroupInfoForm groupInfoForm = new GroupInfoForm();
+            groupInfoForm.Show();
+        }
 
+        else if (StatisticsRadioButtonSelected)
+        {
+            StatisticsForm statisticsForm = new StatisticsForm();
+            statisticsForm.Show();
+        }
+        
         else
         {
             Console.WriteLine("Ничего не выбрано. Выбери кнопку");
