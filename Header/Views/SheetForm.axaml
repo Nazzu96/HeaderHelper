@@ -16,31 +16,32 @@
 
         <!-- Переключатель месяцев -->
         <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
-            <Button Name="MonthLeftArrowButton"/>
-            <TextBlock Name="MonthTextBlock"/>
-            <Button Name="MonthRightArrowButton"/>
+            <Button Name="MonthLeftArrowButton" Content="←" />
+            <TextBlock Name="MonthTextBlock" Text="Месяц" />
+            <Button Name="MonthRightArrowButton" Content="→" />
         </StackPanel>
-        
+
         <!-- Переключатель дисциплин -->
         <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
-            <ComboBox Name="DisciplineComboBox"/>
+            <ComboBox Name="DisciplineComboBox" ItemsSource="{Binding Disc}" />
         </StackPanel>
 
         <!-- Перечень студентов -->
-        <DataGrid Grid.Row="1" ItemsSource="{Binding Std}">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Std}" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding Id}" />
-                <DataGridTextColumn Binding="{Binding Name}" />
-                <DataGridCheckBoxColumn Binding="{Binding FullAttendance}" />
-                <DataGridTextColumn Binding="{Binding SummaryMissing}" />
-                <DataGridTextColumn Binding="{Binding MissedDay}" />
+                <DataGridTextColumn Header="№" Binding="{Binding Id}" Width="Auto" />
+                <DataGridTextColumn Header="ФИО" Binding="{Binding Name}" Width="Auto" />
+                <DataGridCheckBoxColumn Header="100% посещаемость?" Binding="{Binding FullAttendance}" Width="Auto" />
+                <DataGridTextColumn Header="Всего пропущено" Binding="{Binding SummaryMissing}" Width="Auto" />
+                <DataGridTextColumn Header="Пропущенные даты (приставка b для уважительных)"
+                                    Binding="{Binding MissedDay}" Width="Auto" />
             </DataGrid.Columns>
         </DataGrid>
-        
+
         <!-- Сохранение и подпись -->
-        <StackPanel Grid.Row="2">
-            <Label Name=""/>
-            <Button Name="SaveButton"/>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Рубежный контроль" />
+            <Button Name="SaveButton" Content="Сохранить" />
         </StackPanel>
     </Grid>
 </Window>
