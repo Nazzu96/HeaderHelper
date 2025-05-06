@@ -27,13 +27,13 @@
         </StackPanel>
 
         <!-- Перечень студентов -->
-        <DataGrid Grid.Row="1" ItemsSource="{Binding }">
+        <DataGrid Grid.Row="1" ItemsSource="{Binding Std}">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding }" />
-                <DataGridTextColumn Binding="{Binding }" />
-                <DataGridCheckBoxColumn />
-                <DataGridCheckBoxColumn />
-                <DataGridTextColumn />
+                <DataGridTextColumn Binding="{Binding Id}" />
+                <DataGridTextColumn Binding="{Binding Name}" />
+                <DataGridCheckBoxColumn Binding="{Binding FullAttendance}" />
+                <DataGridTextColumn Binding="{Binding SummaryMissing}" />
+                <DataGridTextColumn Binding="{Binding MissedDay}" />
             </DataGrid.Columns>
         </DataGrid>
         
