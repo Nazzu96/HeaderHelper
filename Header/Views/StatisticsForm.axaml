@@ -7,10 +7,112 @@
         x:DataType="vm:StatisticsViewModel"
         xmlns:vm="clr-namespace:Header.ViewModels"
         Title="Статистика">
-
-    <!-- Ты промахнулся с названием класса (ты написал StatisticsFormViewModel а в папке ViewModel ты создал класс StatisticsViewModel) -->
     <Window.DataContext>
         <vm:StatisticsViewModel />
     </Window.DataContext>
-    
+
+    <WrapPanel Orientation="Horizontal">
+        <!-- Оценки -->
+        <StackPanel Orientation="Vertical">
+            <Label Content="Общая информация:" />
+
+            <Border Margin="0, 5" BorderBrush="Black" BorderThickness="1">
+                <DockPanel>
+                    <Label Content="Всего студентов:" FontSize="12" VerticalAlignment="Center"
+                           HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Отличники (5):" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Успевающие (5, 4):" FontSize="12" VerticalAlignment="Center"
+                           HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Хорошисты (4):" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Троечники (5, 4, 3):" FontSize="12" VerticalAlignment="Center"
+                           HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Неаттестованные:" FontSize="12" VerticalAlignment="Center"
+                           HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+            <Border BorderBrush="Black" BorderThickness="0, 0, 0, 1">
+                <DockPanel>
+                    <Label Content="Свободное посещение:         " FontSize="12" VerticalAlignment="Center"
+                           HorizontalAlignment="Left" />
+                    <TextBlock Text="34" FontSize="12" VerticalAlignment="Center" HorizontalAlignment="Right" />
+                </DockPanel>
+            </Border>
+
+        </StackPanel>
+        <!-- Неаттестованные -->
+        <Border></Border>
+        <!-- Топ прогульщиков -->
+        <Border BorderThickness="1" Margin="5" BorderBrush="Black">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock Text="Топ-5 прогульщиков" />
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="EmptyName1Block" Text="Иванов" />
+                    <Label  Target="EmptyName1Block" Content="17 пропусков " FontSize="12" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="EmptyName2Block" Text="Иванов" />
+                    <Label  Target="EmptyName2Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="EmptyName3Block" Text="Иванов" />
+                    <Label  Target="EmptyName3Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="EmptyName4Block" Text="Иванов" />
+                    <Label  Target="EmptyName4Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Name="EmptyName5Block" Text="Иванов" />
+                    <Label  Target="EmptyName5Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+            </StackPanel>
+        </Border>
+        <!-- График посещаемости (по дням) -->
+        <StackPanel></StackPanel>
+        
+        <!-- 100% посещаемость -->
+        <Border>
+            <StackPanel>
+                <ItemsControl>
+                    <ItemsControl.ItemsSource>
+                        
+                    </ItemsControl.ItemsSource>
+                </ItemsControl>
+            </StackPanel>
+        </Border>
+        
+        <!-- Посещаемость дисциплин (в %) -->
+        <StackPanel>
+            <Canvas>
+            </Canvas>
+        </StackPanel>
+    </WrapPanel>
+
 </Window>
