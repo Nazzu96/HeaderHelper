@@ -5,18 +5,18 @@ namespace Header.Utils;
 
 public static class Global
 {
-    public static ObservableCollection<Student> Std { get; } =
+    public static ObservableCollection<Students> Std { get; } =
     [
-        new Student(1, "Шихкеримов Руслан Гаджикурбанович", false, 0, ""),
-        new Student(2, "Герейханов Намик Алимадетович", false, 0, ""),
-        new Student(3, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(4, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(5, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(6, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(7, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(8, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(9, "Устенко Данил Алексеевич", false, 0, ""),
-        new Student(10, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(1, "Шихкеримов Руслан Гаджикурбанович", false, 0, ""),
+        new Students(2, "Герейханов Намик Алимадетович", false, 0, ""),
+        new Students(3, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(4, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(5, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(6, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(7, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(8, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(9, "Устенко Данил Алексеевич", false, 0, ""),
+        new Students(10, "Устенко Данил Алексеевич", false, 0, ""),
     ];
 
     public static ObservableCollection<Disciplines> Disc { get; } =

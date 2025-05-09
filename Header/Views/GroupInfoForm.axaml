@@ -6,7 +6,7 @@
         x:Class="Header.Views.GroupInfoForm"
         x:DataType="vm:GroupInfoFormViewModel"
         xmlns:vm="clr-namespace:Header.ViewModels"
-        Title="GroupInfoForm">
+        Title="Данные группы">
     <!-- Комментарий -->
     <!-- DataContext="{Binding Source={x:Type vm:AcquaintanceFormViewModel}}" -->
     <Window.DataContext>

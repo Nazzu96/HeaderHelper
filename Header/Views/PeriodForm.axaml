@@ -5,38 +5,39 @@
         xmlns:vm="clr-namespace:Header.ViewModels"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Header.Views.PeriodForm"
-        Title="PeriodForm">
+        Title="Рубежный контроль"
+        x:DataType="vm:PeriodViewModel">
 
     <Window.DataContext>
         <vm:PeriodViewModel />
     </Window.DataContext>
 
     <Grid RowDefinitions="Auto, *, Auto">
-        <!-- Переключение дисциплин -->
-        <StackPanel Grid.Row="0">
-            <Button Name="DisciplineLeftArrowButton"/>
-            <TextBlock Name="DisciplineTextBlock"/>
-            <Button Name="DisciplineRightArrowButton"/>
+        <!-- Переключатель РК -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" Orientation="Horizontal" Margin="5, 5, 0, 10">
+            <Button Content="РК-1" />
+            <Button Content="РК-2" />
+            <Button Content="Семестр (1)" />
+            <Button Content="РК-3" />
+            <Button Content="РК-4" />
+            <Button Content="РК-5" />
+            <Button Content="Семестр (2)" />
         </StackPanel>
-        
-        <!-- Переключение номера РК -->
-        <StackPanel Grid.Row="0">
-            <ComboBox Name="PeriodNumberComboBox">
-                <ComboBoxItem></ComboBoxItem>
-            </ComboBox>
-        </StackPanel>
-        
-        <!-- DataGrid для РК -->
-        <DataGrid Grid.Row="1" Background="AntiqueWhite">
-        </DataGrid>
-        
-        <!-- Сохранение результатов и подпись -->
-        <StackPanel Grid.Row="2">
-            <Label />
-            <Button />
-        </StackPanel>
-    </Grid>
 
+        <!-- DataGrid для РК -->
+        <DataGrid Grid.Row="1" Background="AntiqueWhite" AutoGenerateColumns="False" ItemsSource="{Binding Std}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="№" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="ФИО" Binding="{Binding Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Сохранение результатов и подпись -->
+        <DockPanel Grid.Row="2" HorizontalAlignment="Stretch" Margin="5, 10">
+            <Label Content="last change: " VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            <Button Content="Сохранить" HorizontalAlignment="Right" />
+        </DockPanel>
+    </Grid>
 
 
 </Window>

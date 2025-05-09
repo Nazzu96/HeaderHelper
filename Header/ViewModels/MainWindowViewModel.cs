@@ -45,26 +45,28 @@ public partial class MainWindowViewModel : ObservableObject
     {
         if (SheetRadioButtonSelected)
         {
-         // Переход на форму Знакомство;
+         // Переход на форму Ведомость
          SheetForm sheetForm = new SheetForm();
          sheetForm.Show();
         }
 
         else if (PeriodRadioButtonSelected)
         {
-            // Переход на форму Статистика;  
-            StatisticsForm statisticsForm = new StatisticsForm();
-            statisticsForm.Show();
+            // Переход на форму Рубежный контроль
+            PeriodForm periodForm = new PeriodForm();
+            periodForm.Show();
         }
         
         else if (GroupInfoRadioButtonSelected)
         {
+            // Переход на форму Данные группы
             GroupInfoForm groupInfoForm = new GroupInfoForm();
             groupInfoForm.Show();
         }
 
         else if (StatisticsRadioButtonSelected)
         {
+            // Переход на форму Статистика
             StatisticsForm statisticsForm = new StatisticsForm();
             statisticsForm.Show();
         }

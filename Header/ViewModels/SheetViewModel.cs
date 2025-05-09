@@ -7,6 +7,6 @@ namespace Header.ViewModels;
 
 public class SheetViewModel : ObservableObject
 {
-    public ObservableCollection<Student> Std { get; set; } = Global.Std;
+    public ObservableCollection<Students> Std { get; set; } = Global.Std;
     public ObservableCollection<Disciplines> Disc { get; set; } = Global.Disc;
 }

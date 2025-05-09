@@ -6,7 +6,7 @@
         x:Class="Header.Views.SheetForm"
         x:DataType="vm:SheetViewModel"
         xmlns:vm="clr-namespace:Header.ViewModels"
-        Title="SheetForm">
+        Title="Ведомость">
 
     <Window.DataContext>
         <vm:SheetViewModel />
@@ -16,14 +16,14 @@
 
         <!-- Переключатель месяцев -->
         <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
-            <Button Name="MonthLeftArrowButton" Content="←" />
-            <TextBlock Name="MonthTextBlock" Text="Месяц" />
-            <Button Name="MonthRightArrowButton" Content="→" />
-        </StackPanel>
+            <Grid Grid.Row="0" RowDefinitions="*, *" ColumnDefinitions="Auto, Auto, Auto, Auto">
+                <Button Grid.Row="0" Grid.Column="0" Name="MonthLeftArrowButton" Content="←" />
+                <TextBlock Grid.Row="0" Grid.Column="1" Name="MonthTextBlock" Text="Месяц" VerticalAlignment="Center" />
+                <Button Grid.Row="0" Grid.Column="2" Name="MonthRightArrowButton" Content="→" />
+                <ComboBox Grid.Row="0" Grid.Column="3" HorizontalAlignment="Right" Name="DisciplineComboBox"
+                          ItemsSource="{Binding Disc}" />
 
-        <!-- Переключатель дисциплин -->
-        <StackPanel Grid.Row="0" HorizontalAlignment="Stretch">
-            <ComboBox Name="DisciplineComboBox" ItemsSource="{Binding Disc}" />
+            </Grid>
         </StackPanel>
 
         <!-- Перечень студентов -->
@@ -31,17 +31,25 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№" Binding="{Binding Id}" Width="Auto" />
                 <DataGridTextColumn Header="ФИО" Binding="{Binding Name}" Width="Auto" />
-                <DataGridCheckBoxColumn Header="100% посещаемость?" Binding="{Binding FullAttendance}" Width="Auto" />
+                <DataGridCheckBoxColumn Header="100%?" Binding="{Binding FullAttendance}" Width="Auto" />
                 <DataGridTextColumn Header="Всего пропущено" Binding="{Binding SummaryMissing}" Width="Auto" />
-                <DataGridTextColumn Header="Пропущенные даты (приставка b для уважительных)"
-                                    Binding="{Binding MissedDay}" Width="Auto" />
+                <DataGridTextColumn Binding="{Binding MissedDay}" Width="Auto">
+                    <!-- Это необходимо для создания ToolTip.Tip (В настройках названия, Header, я перехожу к настройке данных в нём и уже там заполняю его элементом TextBlock, поддерживающий ToolTip -->
+                    <!-- <DataGridTextColumn.HeaderTemplate> -->
+                    <!--     <DataTemplate> -->
+                    <!--         <TextBlock -->
+                    <!--             Text="Пропущенные даты&#10;(приставка b для уважительных)" -->
+                    <!--             ToolTip.Tip="Приставка 'b' отмечает уважительные пропуски" /> -->
+                    <!--     </DataTemplate> -->
+                    <!-- </DataGridTextColumn.HeaderTemplate> -->
+                </DataGridTextColumn>
             </DataGrid.Columns>
+
         </DataGrid>
 
         <!-- Сохранение и подпись -->
-        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right">
-            <Label Content="Рубежный контроль" />
-            <Button Name="SaveButton" Content="Сохранить" />
-        </StackPanel>
+
+        <Label Grid.Row="2" Content="{Binding  }" HorizontalAlignment="Left" Margin="10" />
+        <Button Grid.Row="2" Name="SaveButton" Content="Сохранить" HorizontalAlignment="Right" Margin="10" />
     </Grid>
 </Window>

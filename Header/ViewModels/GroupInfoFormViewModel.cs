@@ -25,7 +25,7 @@ public partial class GroupInfoFormViewModel : ObservableObject
 
     public string GroupName;
     public ObservableCollection<Disciplines> Disc { get; set; } = Global.Disc;
-    public ObservableCollection<Student> Std { get; set; } = Global.Std;
+    public ObservableCollection<Students> Std { get; set; } = Global.Std;
     
         [RelayCommand]
     private void AddButton()

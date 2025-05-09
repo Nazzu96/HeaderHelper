@@ -10,7 +10,7 @@
         x:Class="Header.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Header">
+        Title="HeaderHelper">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,

@@ -6,7 +6,7 @@
         x:Class="Header.Views.StatisticsForm"
         x:DataType="vm:StatisticsViewModel"
         xmlns:vm="clr-namespace:Header.ViewModels"
-        Title="AcquaintanceForm">
+        Title="Статистика">
 
     <!-- Ты промахнулся с названием класса (ты написал StatisticsFormViewModel а в папке ViewModel ты создал класс StatisticsViewModel) -->
     <Window.DataContext>

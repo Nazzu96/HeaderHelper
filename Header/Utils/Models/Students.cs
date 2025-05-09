@@ -1,6 +1,6 @@
 namespace Header.Utils.Models;
 
-public sealed class Student(int id, string name, bool fullAttendance, int summaryMissing, string missedDay)
+public sealed class Students(int id, string name, bool fullAttendance, int summaryMissing, string missedDay)
 {
     public int Id { get; set; } = id;
     public string Name { get; set; } = name;
