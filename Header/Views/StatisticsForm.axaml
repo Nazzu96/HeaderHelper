@@ -78,38 +78,52 @@
                 <TextBlock Text="Топ-5 прогульщиков" />
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Name="EmptyName1Block" Text="Иванов" />
-                    <Label  Target="EmptyName1Block" Content="17 пропусков " FontSize="12" />
+                    <Label Target="EmptyName1Block" Content="17 пропусков " FontSize="12" />
                 </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Name="EmptyName2Block" Text="Иванов" />
-                    <Label  Target="EmptyName2Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                    <Label Target="EmptyName2Block" Content="17 пропусков " FontSize="12" />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Name="EmptyName3Block" Text="Иванов" />
-                    <Label  Target="EmptyName3Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                    <Label Target="EmptyName3Block" Content="17 пропусков " FontSize="12" />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Name="EmptyName4Block" Text="Иванов" />
-                    <Label  Target="EmptyName4Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                    <Label Target="EmptyName4Block" Content="17 пропусков " FontSize="12" />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Name="EmptyName5Block" Text="Иванов" />
-                    <Label  Target="EmptyName5Block" Content="17 пропусков " FontSize="12" />                </StackPanel>
+                    <Label Target="EmptyName5Block" Content="17 пропусков " FontSize="12" />
+                </StackPanel>
             </StackPanel>
         </Border>
         <!-- График посещаемости (по дням) -->
         <StackPanel></StackPanel>
-        
+
         <!-- 100% посещаемость -->
-        <Border>
-            <StackPanel>
-                <ItemsControl>
-                    <ItemsControl.ItemsSource>
-                        
-                    </ItemsControl.ItemsSource>
-                </ItemsControl>
-            </StackPanel>
-        </Border>
-        
+        <ItemsControl Name="FullVisitItemsControl" ItemsSource="{Binding DiscPopul}">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock HorizontalAlignment="Left" Text="{Binding Disciplines}"/>
+                        <ProgressBar Minimum="0" Value="{Binding ProgressBar}" Maximum="100"/>
+                        <Label HorizontalAlignment="Right" Content="{Binding PercentPopularity}"/>
+                    </StackPanel>
+                </DataTemplate>
+
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
         <!-- Посещаемость дисциплин (в %) -->
         <StackPanel>
+            <ProgressBar Minimum="0" Value="40" Maximum="100" />
             <Canvas>
             </Canvas>
         </StackPanel>

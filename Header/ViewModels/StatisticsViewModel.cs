@@ -1,5 +1,6 @@
 using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
+using Header.Utils;
 using Header.Utils.Models;
 
 namespace Header.ViewModels;
@@ -8,11 +9,24 @@ namespace Header.ViewModels;
 // а также иметь расширение partial (переводиться как "частичный")
 // тк ObservableObject будет создавать в другом месте доп функции и поля (например при ObservableProperty)
 // поэтому я советовал CommunityToolkit.MVVM тк большинство повторяющегося кода просто автоматизировано
-public partial class StatisticsViewModel : ObservableObject
+public class StatisticsViewModel : ObservableObject
 {
-    public ObservableCollection<string> Disc { get; } = [];
+    public ObservableCollection<Students> Std { get; set; } = Global.Std;
+    public ObservableCollection<Disciplines> Disc { get; set; } = Global.Disc;
+    public ObservableCollection<DisciplinesPopularuty> DiscPopul { get; set; }
 
-    // в другой части проекта создалось свойство Test к которому ты уже будешь привязываться во View
-    [ObservableProperty] private string _test = "test";
+    bool isFirstAddicting = false;
 
+    public void Begin()
+    {
+        if (isFirstAddicting)
+        {
+            for (int i = 0; i < Disc.Count - 1; i++)
+            {
+                string disc = Disc[i].ToString();
+                DiscPopul.Add(new DisciplinesPopularuty(disc, 0, "0"));
+                isFirstAddicting = false;
+            }
+        }
+    }
 }

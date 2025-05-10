@@ -39,3 +39,25 @@
     
 Что нужно сделать на форме?
 Поправить стрелочки 
+
+
+<ItemsControl x:Name="myItemsControl">
+    <ItemsControl.ItemsPanel>
+        <ItemsPanelTemplate>
+            <!-- Контейнер для элементов (StackPanel) -->
+            <StackPanel Orientation="Vertical" Spacing="10" />
+        </ItemsPanelTemplate>
+    </ItemsControl.ItemsPanel>
+
+    <!-- Шаблон элемента (ProgressBar) -->
+    <ItemsControl.ItemTemplate>
+        <DataTemplate>
+            <ProgressBar 
+                Width="200" 
+                Minimum="0" 
+                Maximum="100" 
+                Value="{Binding}" />
+        </DataTemplate>
+    </ItemsControl.ItemTemplate>
+</ItemsControl>
+
