@@ -88,5 +88,5 @@ public partial class MainWindowViewModel : ObservableObject
         var result = await window.StorageProvider.SaveFilePickerAsync(saveOptions);
         Console.WriteLine(result.Name);
         Console.WriteLine(result.Path);
-    } // Скачивание файла
+    }
 }
