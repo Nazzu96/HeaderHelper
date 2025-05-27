@@ -28,7 +28,7 @@
                     CornerRadius="0, 0, 3, 3">
                 <TextBlock
                     Name="FindFileTextBlock"
-                    Text="{Binding CollName}"
+                    Text="ИСП-IV-03"
 
                     HorizontalAlignment="Center"
                     VerticalAlignment="Center"
@@ -47,6 +47,7 @@
                     IsChecked="{Binding SheetRadioButtonSelected}"
                     Margin="0, 0, 5, 5" Grid.Column="0" Grid.Row="0"
                     Content="Ведомость"
+                    CornerRadius="10"
                     Background="Fuchsia" />
                 <RadioButton
                     GroupName="SelectOptions"
@@ -85,7 +86,7 @@
                     MinWidth="115" DockPanel.Dock="Left">
                     Скачать файл
                 </Button>
-                <TextBlock Name="LastChangeTextBlock" Background="AliceBlue" DockPanel.Dock="Right" TextWrapping="Wrap"
+                <TextBlock Name="LastChangeTextBlock" Background="Transparent" DockPanel.Dock="Right" TextWrapping="Wrap"
                            Text="{Binding LastChanged}" />
             </DockPanel>
 

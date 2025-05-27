@@ -12,7 +12,7 @@
         <vm:PeriodViewModel />
     </Window.DataContext>
 
-    <Grid RowDefinitions="Auto, *, Auto">
+    <Grid RowDefinitions="Auto, *, Auto" Background="DarkSlateGray">
         <!-- Переключатель РК -->
         <StackPanel Grid.Row="0" HorizontalAlignment="Stretch" Orientation="Horizontal" Margin="5, 5, 0, 10">
             <Button Content="РК-1" />
@@ -29,11 +29,17 @@
             <DataGrid.Columns>
                 <DataGridTextColumn Header="№" Binding="{Binding Id}" />
                 <DataGridTextColumn Header="ФИО" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="ФЗ"  />
+                <DataGridTextColumn Header="ИСП"  />
+                <DataGridTextColumn Header="ССТ"  />
+                <DataGridTextColumn Header="ТВМС" />
+                <DataGridTextColumn Header="ОБЖ" />
+                <DataGridTextColumn Header="ЭО"  />
             </DataGrid.Columns>
         </DataGrid>
 
         <!-- Сохранение результатов и подпись -->
-        <DockPanel Grid.Row="2" HorizontalAlignment="Stretch" Margin="5, 10">
+        <DockPanel  Grid.Row="2" HorizontalAlignment="Stretch" Margin="5, 10" Background="">
             <Label Content="last change: " VerticalAlignment="Center" HorizontalAlignment="Left"/>
             <Button Content="Сохранить" HorizontalAlignment="Right" />
         </DockPanel>
