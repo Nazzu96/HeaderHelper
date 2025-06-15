@@ -47,7 +47,8 @@
                                 HorizontalAlignment="Center" Content="Добавить"
                                 Command="{Binding AddButtonCommand}" />
                         <TextBox Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"
-                                 Text="{Binding FullNameOrDiscipline}"
+                                 Name = "SourceAddTextBox"
+                                 Text="{Binding StudentName, Mode=TwoWay}"
                                  Watermark="Студент Студентович Студентов/ Дисциплина"
                                  HorizontalAlignment="Stretch" Margin="10"
                                  VerticalAlignment="Center" />
